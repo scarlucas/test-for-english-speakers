@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*----------HEADER----------*/
+
+header {
+    background-color: #365073;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+header a {
+    color: #F2F2F2;
+    font-size: 18px;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu li, #logo {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.lined::after {
+    content: '';
+    background-color: #BF3B3B;
+    display: block;
+    margin: auto;
+    width: 0%;
+    height: 2px;
+    transition: 0.5s;
+}
+
+.lined:hover::after {
+    width: 100%;
+}
+
+.grow:hover {
+    transform: scale(1.2);
+}
+
+#logo:hover a {
+    color: #BF3B3B;
+}
+
+/*----------MAIN----------*/
+
+main {
+    background-color: #fff;
+    height: 900px;
+}
+
+.content {
+    background-color: #365073;
+    margin: auto;
+    margin-top: 10px;
+    width: 90%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+.title {
+    padding: 15px 0px;
+    color: #fff;
+    text-align: center;
+}
+
+.tables {
+    display: flex;
+    justify-content: space-around;
+    height: 80%;
+}
+
+.block {
+    background-color: #BF3B3B;
+    height: 95%;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.titles {
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.questions {
+    margin-right: 15%;
+    text-align: right;
+}
+
+.questions p {
+    color: #fff;
+    font-size: 17px;
+    padding-bottom: 15px;
+}
+
+.questions input {
+    padding: 3px 8px;
+    font-size: 16px;
+    width: 140px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+}
+
+input:focus {
+    transform: scale(1.02);
+}
+
+.btns {
+    text-align: center;
+}
+
+.btn {
+    text-align: auto;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #fff;
+    font-size: 13px;
+    padding: 12px 34px;
+    cursor: pointer;
+}
+
+.btn label {
+    color: #fff;
+}
+
+.btn:hover {
+    border: 1px solid #BF3B3B;
+    background-color: #BF3B3B;
+    transition: 1s;
+}
+
+/*----------MOBILE----------*/
+
+@media (max-width: 700px) {
+    .contents {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+
+
+
